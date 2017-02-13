@@ -16,11 +16,16 @@ namespace Leetspeak
         {
           newText.Add(Convert.ToChar('3'));
         }
+        else if (index.Equals('E'))
+        {
+          newText.Add(Convert.ToChar('3'));
+        }
         else
         {
           newText.Add(index);
         }
       }
+
 
       string result = string.Join("", newText.ToArray());
       return result;
