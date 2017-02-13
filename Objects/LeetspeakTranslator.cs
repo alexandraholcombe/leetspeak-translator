@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using System;
+using Nancy;
 
-namespace Leetspeak
+namespace Leetspeak.Objects
 {
   public class LeetspeakTranslator
   {

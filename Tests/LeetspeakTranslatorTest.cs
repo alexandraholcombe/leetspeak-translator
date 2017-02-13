@@ -1,5 +1,5 @@
 using Xunit;
-namespace Leetspeak
+namespace Leetspeak.Objects
 {
   public class LeetspeakTranslatorTest
   {

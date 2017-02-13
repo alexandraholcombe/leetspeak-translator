@@ -1,5 +1,5 @@
 using Nancy;
-using AddressBook.Objects;
+using Leetspeak.Objects;
 using System.Collections.Generic;
 
 namespace Leetspeak
@@ -10,7 +10,8 @@ namespace Leetspeak
     {
       Get["/"] = _ => {
         return View["index.cshtml"];
-      }
+      };
+      
     }
   }
 }
