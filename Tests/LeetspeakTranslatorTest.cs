@@ -65,5 +65,12 @@ namespace Leetspeak
       LeetspeakTranslator testLeetspeakTranslator = new LeetspeakTranslator();
       Assert.Equal("sharp", testLeetspeakTranslator.Translate("sharp"));
     }
+
+    [Fact]
+    public void LeetspeakTranslator_ForSentence_translatedsentence()
+    {
+      LeetspeakTranslator testLeetspeakTranslator= new LeetspeakTranslator();
+      Assert.Equal("D0n't y0u l0v3 th3z3 'String' 3x3rciz3z? 1 d0!", testLeetspeakTranslator.Translate("Don't you love these 'String' exercises? I do!"));
+    }
   }
 }
