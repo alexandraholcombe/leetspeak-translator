@@ -23,5 +23,19 @@ namespace Leetspeak
       LeetspeakTranslator testLeetspeakTranslator = new LeetspeakTranslator();
       Assert.Equal("B33", testLeetspeakTranslator.Translate("BEE"));
     }
+
+    [Fact]
+    public void LeetspeakTranslator_ForLowercaseO_0()
+    {
+      LeetspeakTranslator testLeetspeakTranslator = new LeetspeakTranslator();
+      Assert.Equal("b00", testLeetspeakTranslator.Translate("boo"));
+    }
+
+    [Fact]
+    public void LeetspeakTranslator_ForUppercaseO_0()
+    {
+      LeetspeakTranslator testLeetspeakTranslator = new LeetspeakTranslator();
+      Assert.Equal("B00", testLeetspeakTranslator.Translate("BOO"));
+    }
   }
 }

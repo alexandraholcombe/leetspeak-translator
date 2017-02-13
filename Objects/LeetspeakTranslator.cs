@@ -12,13 +12,13 @@ namespace Leetspeak
       List<char> newText = new List<char> {};
       foreach(var index in array)
       {
-        if (index.Equals('e'))
+        if (index.Equals('e') || index.Equals('E'))
         {
           newText.Add(Convert.ToChar('3'));
         }
-        else if (index.Equals('E'))
+        else if (index.Equals('o') || index.Equals('O'))
         {
-          newText.Add(Convert.ToChar('3'));
+          newText.Add(Convert.ToChar('0'));
         }
         else
         {
