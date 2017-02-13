@@ -27,13 +27,21 @@ This web application will take a string from a user and convert it into a simpli
 * Example Input: 65
 * Example Output: 65
 
-**The application will replace all instances of the letter "e" or "E" with the number 3.**
-* Example Input: "bee", "BEE"
-* Example Output: "b33", "B33"
+**The application will replace all instances of the lowercase letter "e" with the number 3.**
+* Example Input: "bee"
+* Example Output: "b33"
 
-**The application will replace all instances of the letter "o" or "O" with the number 0.**
-* Example Input: "boo", "BOO"
-* Example Output: "b00", "B00"
+**The application will replace all instances of the uppercase letter "E" with the number 3.**
+* Example Input: "BEE"
+* Example Output: "B33"
+
+**The application will replace all instances of the lowercase letter "o" with the number 0.**
+* Example Input: "boo"
+* Example Output: "b00"
+
+**The application will replace all instances of the uppercase letter "O" with the number 0.**
+* Example Input: "BOO"
+* Example Output: "B00"
 
 **The application will replace all instances of the capital letter "I" with the number 1.**
 * Example Input: "input", "Input"

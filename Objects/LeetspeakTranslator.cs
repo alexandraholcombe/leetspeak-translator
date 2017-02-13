@@ -4,7 +4,9 @@ namespace Leetspeak
   {
     public string Translate(string text)
     {
-      return text;
+      char[] array = text.ToCharArray();
+      string result = string.Join("", array);
+      return result;
     }
   }
 }
