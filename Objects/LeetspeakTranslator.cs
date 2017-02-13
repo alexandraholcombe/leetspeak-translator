@@ -20,6 +20,10 @@ namespace Leetspeak
         {
           newText.Add(Convert.ToChar('0'));
         }
+        else if (index.Equals('I'))
+        {
+          newText.Add(Convert.ToChar('1'));
+        }
         else
         {
           newText.Add(index);
