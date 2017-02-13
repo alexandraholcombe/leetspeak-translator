@@ -14,8 +14,9 @@ namespace Leetspeak
 
       Post["/results"] = _ => {
         var newLeetspeakTranslator = new LeetspeakTranslator(Request.Form["user-input"]);
+        var inputText = newLeetspeakTranslator.GetText();
         return View["results.cshtml", newLeetspeakTranslator];
-      }
+      };
     }
   }
 }

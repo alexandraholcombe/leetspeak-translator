@@ -6,8 +6,27 @@ namespace Leetspeak.Objects
 {
   public class LeetspeakTranslator
   {
-    public string Translate(string text)
+    private string _text;
+
+    public LeetspeakTranslator (string text)
     {
+      _text = text;
+    }
+
+    public string GetText()
+    {
+      return _text;
+    }
+    public void SetText(string inputText)
+    {
+      _text = inputText;
+    }
+
+    public string Translate(string text = null)
+    {
+      if (text == null){
+        text = _text;
+      }
       char[] array = text.ToCharArray();
 
       List<char> newText = new List<char> {};
