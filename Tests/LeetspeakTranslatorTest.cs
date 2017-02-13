@@ -51,5 +51,19 @@ namespace Leetspeak
       LeetspeakTranslator testLeetspeakTranslator = new LeetspeakTranslator();
       Assert.Equal("input", testLeetspeakTranslator.Translate("input"));
     }
+
+    [Fact]
+    public void LeetspeakTranslator_ForSNotFirstLetterOfWord_z()
+    {
+      LeetspeakTranslator testLeetspeakTranslator = new LeetspeakTranslator();
+      Assert.Equal("czharp", testLeetspeakTranslator.Translate("csharp"));
+    }
+
+    [Fact]
+    public void LeetspeakTranslator_ForSFirstLetterOfWord_s()
+    {
+      LeetspeakTranslator testLeetspeakTranslator = new LeetspeakTranslator();
+      Assert.Equal("sharp", testLeetspeakTranslator.Translate("sharp"));
+    }
   }
 }

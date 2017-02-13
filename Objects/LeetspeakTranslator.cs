@@ -10,26 +10,29 @@ namespace Leetspeak
       char[] array = text.ToCharArray();
 
       List<char> newText = new List<char> {};
-      foreach(var index in array)
+      for (int i = 0; i < array.Length; i++)
       {
-        if (index.Equals('e') || index.Equals('E'))
+        if (array[i].Equals('e') || array[i].Equals('E'))
         {
           newText.Add(Convert.ToChar('3'));
         }
-        else if (index.Equals('o') || index.Equals('O'))
+        else if (array[i].Equals('o') || array[i].Equals('O'))
         {
           newText.Add(Convert.ToChar('0'));
         }
-        else if (index.Equals('I'))
+        else if (array[i].Equals('I'))
         {
           newText.Add(Convert.ToChar('1'));
         }
+        else if (array[i].Equals('s') && !(i == 0 || char.IsWhiteSpace(array[i-1])))
+        {
+          newText.Add(Convert.ToChar('z'));
+        }
         else
         {
-          newText.Add(index);
+         newText.Add(array[i]);
         }
       }
-
 
       string result = string.Join("", newText.ToArray());
       return result;
